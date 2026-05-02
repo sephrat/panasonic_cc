@@ -33,9 +33,9 @@
       "init": {
         "data": {
           "force_outside_sensor": "Forcera yttre sensor",
-          "enable_daily_energy_sensor": "Aktivera dagliga energisensorer (kräver omstart)",
-          "force_enable_nanoe": "Aktivera Nanoe switch för alla enheter (kräver omstart)",
-          "use_panasonic_preset_names": "Använd 'Tyst' och 'Kraftfull' istället för 'Eco' och 'Boost' läge (kräver omstart)",
+          "enable_daily_energy_sensor": "Aktivera dagliga energisensorer",
+          "force_enable_nanoe": "Aktivera Nanoe switch för alla enheter",
+          "use_panasonic_preset_names": "Använd 'Tyst' och 'Kraftfull' istället för 'Eco' och 'Boost' läge",
           "device_fetch_interval": "Enhetshämtningsintervall (sekunder)",
           "energy_fetch_interval": "Energihämtningsintervall (sekunder)"
         }

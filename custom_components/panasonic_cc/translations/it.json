@@ -41,9 +41,9 @@
       "init": {
         "data": {
           "force_outside_sensor": "Forza sensore esterno",
-          "enable_daily_energy_sensor": "Abilita i sensori energia giornalieri (riavvio necessario)",
-          "force_enable_nanoe": "Abilita Nonoe per tutti i dispositivi (riavvio necessario)",
-          "use_panasonic_preset_names": "Usa i profili 'Quiet' e 'Powerful' invece di 'Eco' e 'Boost' (riavvio necessario)",
+          "enable_daily_energy_sensor": "Abilita i sensori energia giornalieri",
+          "force_enable_nanoe": "Abilita Nonoe per tutti i dispositivi",
+          "use_panasonic_preset_names": "Usa i profili 'Quiet' e 'Powerful' invece di 'Eco' e 'Boost'",
           "device_fetch_interval": "Intervallo interrogazione dispositivo (secondi)",
           "energy_fetch_interval": "Intervallo interrogazione energia (secondi)"
         }

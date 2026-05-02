@@ -41,9 +41,9 @@
       "init": {
         "data": {
           "force_outside_sensor": "Vynutit povolení venkovního teploměru",
-          "enable_daily_energy_sensor": "Povolit měření denní energie (vyžaduje restart)",
-          "force_enable_nanoe": "Povolit přepínač Nanoe pro všechna zařízení (vyžaduje restart)",
-          "use_panasonic_preset_names": "Použít režimy 'Tichý' a 'Výkonný' místo 'Eco' a 'Boost' (vyžaduje restart)",
+          "enable_daily_energy_sensor": "Povolit měření denní energie",
+          "force_enable_nanoe": "Povolit přepínač Nanoe pro všechna zařízení",
+          "use_panasonic_preset_names": "Použít režimy 'Tichý' a 'Výkonný' místo 'Eco' a 'Boost'",
           "device_fetch_interval": "Prodleva vyčítání zařízení (sekunda)",
           "energy_fetch_interval": "Prodleva vyčítání energie (sekunda)"
         }

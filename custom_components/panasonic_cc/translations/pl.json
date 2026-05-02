@@ -41,9 +41,9 @@
       "init": {
         "data": {
           "force_outside_sensor": "Wymuś czujnik zewnętrzny",
-          "enable_daily_energy_sensor": "Włącz dzienne czujniki energii (wymaga ponownego uruchomienia)",
-          "force_enable_nanoe": "Włącz przełącznik Nanoe dla wszystkich urządzeń (wymaga ponownego uruchomienia)",
-          "use_panasonic_preset_names": "Używaj 'Cichy' i 'Mocny' zamiast 'Eco' i 'Boost' (wymaga ponownego uruchomienia)",
+          "enable_daily_energy_sensor": "Włącz dzienne czujniki energii",
+          "force_enable_nanoe": "Włącz przełącznik Nanoe dla wszystkich urządzeń",
+          "use_panasonic_preset_names": "Używaj 'Cichy' i 'Mocny' zamiast 'Eco' i 'Boost'",
           "device_fetch_interval": "Interwał pobierania urządzenia (sekundy)",
           "energy_fetch_interval": "Interwał pobierania energii (sekundy)"
         }

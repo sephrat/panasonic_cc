@@ -41,9 +41,9 @@
       "init": {
         "data": {
           "force_outside_sensor": "Forcer le capteur extérieur",
-          "enable_daily_energy_sensor": "Activer les capteurs d'énergie journaliers (redémarrage requis)",
-          "force_enable_nanoe": "Activer le commutateur Nanoe pour tous les appareils (redémarrage requis)",
-          "use_panasonic_preset_names": "Utiliser 'Silencieux' et 'Puissant' à la place des préréglages 'Eco' et 'Boost' (redémarrage requis)",
+          "enable_daily_energy_sensor": "Activer les capteurs d'énergie journaliers",
+          "force_enable_nanoe": "Activer le commutateur Nanoe pour tous les appareils",
+          "use_panasonic_preset_names": "Utiliser 'Silencieux' et 'Puissant' à la place des préréglages 'Eco' et 'Boost'",
           "device_fetch_interval": "Intervalle de récupération des appareils (secondes)",
           "energy_fetch_interval": "Intervalle de récupération de l'énergie (secondes)"
         }

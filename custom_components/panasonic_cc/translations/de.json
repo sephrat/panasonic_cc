@@ -26,8 +26,8 @@
         "init": {
           "data": {
             "force_outside_sensor": "Force outside sensor",
-            "enable_daily_energy_sensor": "Tägliche Energiesensoren freischalten (Neustart erforderlich)",
-            "force_enable_nanoe": "Einschalte Nanoe für alle GeräteEinschalte Nanoe für alle Geräte (Neustart erforderlich)",
+            "enable_daily_energy_sensor": "Tägliche Energiesensoren freischalten",
+            "force_enable_nanoe": "Einschalte Nanoe für alle GeräteEinschalte Nanoe für alle Geräte",
             "use_panasonic_preset_names": "'Leise' und 'Stark' anstelle von 'Eco' und 'Boost' verwenden",
             "device_fetch_interval": "Abrufintervall für Gerät (Sekunden)",
             "energy_fetch_interval": "Abrufintervall für Energie (Sekunden)"
