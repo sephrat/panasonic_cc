@@ -28,6 +28,7 @@ from .const import (
     CONF_DEVICE_FETCH_INTERVAL,
     CONF_ENERGY_FETCH_INTERVAL,
     DEFAULT_ENERGY_FETCH_INTERVAL,
+    MODELS_WITHOUT_HORIZONTAL_SWING,
 )
 
 _LOGGER = logging.getLogger(__name__)
@@ -83,6 +84,13 @@ class PanasonicDeviceCoordinator(DataUpdateCoordinator[int]):
             name=self._panasonic_device_info.name,
             sw_version=self._api_client.app_version,
         )
+
+    @property
+    def device_has_horizontal_swing(self) -> bool:
+        model = self.device.info.model
+        if any(model.startswith(prefix) for prefix in MODELS_WITHOUT_HORIZONTAL_SWING):
+            return False
+        return self.device.has_horizontal_swing
 
     def get_change_request_builder(self):
         return ChangeRequestBuilder(self.device)

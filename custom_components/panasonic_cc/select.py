@@ -62,9 +62,10 @@ async def async_setup_entry(hass: HomeAssistant, entry, async_add_entities):
         DATA_COORDINATORS
     ]
     for coordinator in data_coordinators:
-        entities.append(
-            PanasonicSelectEntity(coordinator, HORIZONTAL_SWING_DESCRIPTION)
-        )
+        if coordinator.device_has_horizontal_swing:
+            entities.append(
+                PanasonicSelectEntity(coordinator, HORIZONTAL_SWING_DESCRIPTION)
+            )
         entities.append(PanasonicSelectEntity(coordinator, VERTICAL_SWING_DESCRIPTION))
 
     async_add_entities(entities)

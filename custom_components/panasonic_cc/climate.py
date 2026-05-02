@@ -273,7 +273,7 @@ class PanasonicClimateEntity(PanasonicDataEntity, ClimateEntity):
             if opt != constants.AirSwingUD.Swing or device.features.auto_swing_ud
         ]
 
-        if device.has_horizontal_swing:
+        if coordinator.device_has_horizontal_swing:
             self._attr_supported_features |= ClimateEntityFeature.SWING_HORIZONTAL_MODE
             self._attr_swing_horizontal_modes = [
                 opt.name
@@ -300,7 +300,7 @@ class PanasonicClimateEntity(PanasonicDataEntity, ClimateEntity):
         self._attr_target_temperature = state.target_temperature
         self._attr_fan_mode = state.fan_speed.name
         self._attr_swing_mode = state.vertical_swing_mode.name
-        if self.coordinator.device.has_horizontal_swing:
+        if self.coordinator.device_has_horizontal_swing:
             self._attr_swing_horizontal_mode = state.horizontal_swing_mode.name
 
         if self.coordinator.device.in_summer_house_mode:
