@@ -10,8 +10,8 @@ This is a custom component to allow control of Panasonic Comfort Cloud devices i
 > [!IMPORTANT]
 > Before installing this integration, please ensure the following steps have been completed in the Panasonic Comfort Cloud App:
 >
-> - **Set Up Two-Factor Authentication (2FA):** Complete the entire 2FA setup process.  
-> - **Select the SMS Option:** It is crucial to choose the SMS option for 2FA. Failing to do so will result in the error “Missing required parameter: code.”  
+> - **Set Up Two-Factor Authentication (2FA):** Complete the entire 2FA setup process.
+> - **Select the SMS Option:** It is crucial to choose the SMS option for 2FA. Failing to do so will result in the error “Missing required parameter: code.”
 >
 > For optimal operation, it is also recommended that you use separate accounts for Home Assistant and the Comfort Cloud App.
 
@@ -65,7 +65,7 @@ After inital setup, the following options are available:
 
 This integration uses the following modules:
 
-- [`aio-panasonic-comfort-cloud`](https://github.com/sockless-coding/aio-panasonic-comfort-cloud): For Panasonic Heatpumps.
+- [`aio-panasonic-comfort-cloud`](https://github.com/sephrat/aio-panasonic-comfort-cloud: For Panasonic Heatpumps.
 - [`aioaquarea`](https://github.com/cjaliaga/aioaquarea): For Panasonic Aquarea devices.
 
 
