@@ -464,6 +464,7 @@ class PanasonicClimateEntity(PanasonicDataEntity, ClimateEntity):
         builder = self.coordinator.get_change_request_builder()
         await self._async_exit_summer_house_mode(builder)
         builder.set_hvac_mode(op_mode)
+        builder.set_power_mode(constants.Power.On)
         await self.coordinator.async_apply_changes(builder)
         self._update_attributes(builder)
 
