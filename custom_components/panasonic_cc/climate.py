@@ -112,28 +112,15 @@ def convert_state_to_hvac_action(state: PanasonicDeviceParameters) -> HVACAction
 
     match state.mode:
         case constants.OperationMode.Auto:
-            auto_diff = state.target_temperature - state.inside_temperature
-            if auto_diff >= 1:
-                return HVACAction.HEATING
-            elif auto_diff <= -1:
-                return HVACAction.COOLING
             return HVACAction.IDLE
         case constants.OperationMode.Cool:
-            return (
-                HVACAction.COOLING
-                if state.target_temperature < state.inside_temperature
-                else HVACAction.IDLE
-            )
+            return HVACAction.COOLING
         case constants.OperationMode.Dry:
             return HVACAction.DRYING
         case constants.OperationMode.Fan:
             return HVACAction.FAN
         case constants.OperationMode.Heat:
-            return (
-                HVACAction.HEATING
-                if state.target_temperature > state.inside_temperature
-                else HVACAction.IDLE
-            )
+            return HVACAction.HEATING
 
 
 def convert_mode_and_status_to_hvac_mode(
