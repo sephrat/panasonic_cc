@@ -111,16 +111,12 @@ def convert_state_to_hvac_action(state: PanasonicDeviceParameters) -> HVACAction
         return HVACAction.OFF
 
     match state.mode:
-        case constants.OperationMode.Auto:
-            return HVACAction.IDLE
-        case constants.OperationMode.Cool:
-            return HVACAction.COOLING
         case constants.OperationMode.Dry:
             return HVACAction.DRYING
         case constants.OperationMode.Fan:
             return HVACAction.FAN
-        case constants.OperationMode.Heat:
-            return HVACAction.HEATING
+        case _:
+            return None
 
 
 def convert_mode_and_status_to_hvac_mode(
